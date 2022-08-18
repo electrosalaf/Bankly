@@ -11,7 +11,7 @@ public class Transaction {
     private String id;
     private BigDecimal amount;
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Africa/lagos")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private ZonedDateTime timestamp;
     private String reference;
 
